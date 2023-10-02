@@ -84,6 +84,10 @@ To run tests, run the following command
 ```
   php artisan test
 ```
+## Screenshots
+
+<a href="https://github.com/kareemaladawy/laravel-quiz-system/issues/1">Admin Screenshots</a> <br>
+<a href="https://github.com/kareemaladawy/laravel-quiz-system/issues/2">User Screenshots</a>
 
 ## Authors
 
