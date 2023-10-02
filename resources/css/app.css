@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Select 2 */
+.select2 {
+    @apply w-full border-0 placeholder-gray-300 text-gray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring !important;
+}
+
+.select2-dropdown {
+    @apply absolute block w-auto box-border bg-white shadow-lg border-blue-200 z-50 float-left;
+}
+
+.select2-container--default .select2-selection--single {
+    @apply border-0 h-11 flex items-center text-sm;
+}
+
+.select2-container--default .select2-selection--multiple {
+    @apply border-0 text-sm mr-1;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus
+    .select2-selection--multiple {
+    @apply border-0 outline-none ring ring-indigo-500;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    top: 9px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    @apply px-3 py-3 text-blue-600;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    @apply px-3 py-2 text-blue-600;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: inherit;
+}
+
+.select2-selection__choice {
+    @apply text-xs font-semibold inline-block py-1 px-2 rounded bg-gray-800 border-0 !important;
+}
+
+.select2-selection__choice span {
+    @apply text-white !important;
+}
+
+.select2-search__field:focus {
+    outline: none;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__clear {
+    @apply text-rose-500 ml-1 !important;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice__remove {
+    @apply text-gray-300 mr-1 static !important;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice__remove:hover {
+    @apply bg-gray-600 !important;
+}
+
+.select-all,
+.deselect-all {
+    @apply cursor-pointer;
+    font-size: 0.5rem !important;
+}
